@@ -1,5 +1,6 @@
 export const SCREENS = {
   Home: "Home",
   ViewNotes: "ViewNotes",
-  AddNotes: "AddNotes"
+  AddNotes: "AddNotes",
+  AppSlider: "AppSlider"
 }
