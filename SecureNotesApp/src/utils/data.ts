@@ -18,3 +18,11 @@ export const SLIDER_DATA = [
     image: require("../assets/frames/frame3.png"),
   },
 ];
+
+export const NOTES_DROP_DOWN_LIST =[
+  "Fitness Notes",
+  "Study Notes",
+  "Travel Notes",
+  "Other Notes",
+  "Technology Notes",
+]
