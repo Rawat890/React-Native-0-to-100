@@ -85,7 +85,7 @@ export default function Home() {
       </View>
       
       <View style={styles.buttonContainer}>
-      <TextButton size={'medium'} onPress={navigateToSlider}>Continue</TextButton>
+      <TextButton size={'large'} onPress={navigateToSlider}>Continue</TextButton>
       </View>
     </View>
   );
@@ -133,6 +133,6 @@ const styles = StyleSheet.create({
     marginTop: scale(5),
   },
   buttonContainer:{
-    marginTop: scale(60)
+    marginTop: scale(110)
   }
 });
