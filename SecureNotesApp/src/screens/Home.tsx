@@ -15,7 +15,7 @@ import { SCREENS } from '../utils/navigation';
 
 export default function Home() {
   const navigateToSlider = () =>{
-    navigate(SCREENS.AppSlider)
+    navigate(SCREENS.AddNotes)
   }
   return (
     <View style={styles.container}>
