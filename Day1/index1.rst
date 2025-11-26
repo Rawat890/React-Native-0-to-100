@@ -12,11 +12,11 @@ The js thread runs our code, bundled by the metro bundler and interpreted by JSC
 All of out code runs in js thread, undergoing bundling process with the metro bundler. This process generates the js bundle, which is then ready to be executed by a js engine.
 
 Shadow thread - 
-It transforms our flexbox layour into a format that is understandable by natve platforms Android/ios using Yoga layout engine
+It transforms our flexbox layout into a format that is understandable by native platforms Android/ios using Yoga layout engine
 Although we write our layout in flexbox style, the host platforms (Android/iOS) have their own distinct layout systems and don’t inherently follow flexbox rules. To bridge this gap, React Native employs the Shadow thread. This thread processes the layout dimensions and positions from our flexbox code, creating a layout tree (React Shadow Tree) that corresponds to the native system’s requirements. At its core, the Shadow thread utilizes Yoga, a layout engine that effectively translates our flexbox-based layout into a format compatible with the native operating systems.
 
 Main Thread - 
-This thread converts the layout instructions into visual components, handkes the user interactions and events for the responsiveness, and manages Native modules for integrating native platform features.
+This thread converts the layout instructions into visual components, handles the user interactions and events for the responsiveness, and manages Native modules for integrating native platform features.
 
 The Main Thread plays a crucial role in React Native’s architecture. Its primary responsibility is to render the Shadow Tree, an operation that forms the basis of what is referred to as the ‘Host View Tree’ in the Fabric architecture. Essentially, this thread takes the layout calculations and instructions prepared by the Shadow thread and turns them into actual visual components on the screen
 
